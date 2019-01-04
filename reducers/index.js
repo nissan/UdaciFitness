@@ -1,6 +1,6 @@
 import { RECEIVE_ENTRIES, ADD_ENTRY } from "../actions";
 
-export const entries = (state = [], action) => {
+export const entries = (state = {}, action) => {
   switch (action.type) {
     case RECEIVE_ENTRIES:
       return {
